@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-image: linear-gradient(to bottom right, #ff9933 , white);
+  color: #ffffff;
+  padding: 15px;
+}
+
+.box {
+  width: 300px;
+  border: 5px solid black;
+  padding: 0px;
+  margin: 0px;
+}
+
+.text {
+  width: 300px;
+  border: 5px solid white;
+  padding-left: 30px;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+img {
+  width: 300px;
+  border: 5px solid white;
+  margin: 0px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #ff9933;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    padding-left: 30px;
+  }
+  img.first {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  img {
+    padding-left: 50px;
+    padding-top: 40px;
+  }
+  img.second {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    padding-left: 0px;
+  }
+  img.second {
+    display: none;
+  }
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Stellaspi</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu box">
+  	<h1>Snacks</h1>
+    <ul>
+    	<li>Croques</li>
+		<li>Chips</li>
+		<li>Frietjes</li>
+    </ul>
+  </div>
+
+    <div class="col-6 col-s-9 text">
+    <h1>extra info</h1>
+    <p>elke dag 20u30 tot 3uur<br>
+    adres: Pannenhuisstraat 360,<br> &emsp;&emsp;&emsp; 2500 Lier<br>
+    bier van de maand: <br>
+    de 26ste is er een mini disco</p>
+  </div>
+
+  
+  <img class="first" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/84439275_486643285344426_715824748772196352_n.jpg?_nc_cat=108&_nc_ohc=F3oJ0RislVMAX8HyBTq&_nc_ad=z-m&_nc_cid=0&_nc_zor=9&_nc_ht=scontent.xx&_nc_tp=6&oh=32c1c1f1a5b2c3b33cecb48fd5ce6842&oe=5EC229F0">
+
+  <div class="col-3 col-s-3 menu box">
+  	<h1>Datums</h1>
+    <ul>
+      <li>21 februarie</li>
+		<li>20 maart</li>
+		<li>10 april</li>
+		<li>15 mei</li>
+		<li>26 en 27 juli</li>
+    </ul>
+  </div>
+  
+ 	 <div class="col-6 col-s-9 text">
+   	 <h1>De reden</h1>
+    <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - </p>
+ 	 </div>
+  
+    <img class="second" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/84439275_486643285344426_715824748772196352_n.jpg?_nc_cat=108&_nc_ohc=F3oJ0RislVMAX8HyBTq&_nc_ad=z-m&_nc_cid=0&_nc_zor=9&_nc_ht=scontent.xx&_nc_tp=6&oh=32c1c1f1a5b2c3b33cecb48fd5ce6842&oe=5EC229F0">
+  
+</div>
+
+<div class="footer">
+  <p>speciale dank aan de leidingom ons te helpen<br>Tyra en Joy ;)</p>
+</div>
+
+</body>
+</html>
