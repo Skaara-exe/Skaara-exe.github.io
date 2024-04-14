@@ -1,9 +1,16 @@
-main{
+@font-face {
+    font-family: 'RoundsBlack_v2';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tangerine'), url('RoundsBlack_v2.otf') format('truetype');
+  }
+:root{
     --primary:#fafafa;
     --secondary:#F7D002;
     --dod:#db3030;
 }
 body{
+    font-family: 'RoundsBlack_v2';
     background-color: var(--primary);
 
 }
