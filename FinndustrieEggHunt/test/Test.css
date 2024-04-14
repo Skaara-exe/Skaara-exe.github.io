@@ -12,7 +12,7 @@
     --pin:#F17167;
     --pinSec: #DA663C;
 
-    --m1: #0fc427;
+    --m1: #ff85f5;
     --m2: #ab94ee;
     --m3: #e72f0f;
     --m4: #00ff22;
@@ -20,10 +20,10 @@
     --m6: #808000;
     --m7: #a994eb;
     --m8: #1b61e4;
-    --m9: #000000;
-    --m10: #000000;
-    --m11: #000000;
-    --m12: #000000;
+    --m9: #999999;
+    --m10: #ff1ad5;
+    --m11: #800080;
+    --m12: #0749ff;
     --m13: #000000;
 }
 ::-webkit-scrollbar {
@@ -94,6 +94,10 @@ div:not(div[hidden]).Person:hover {
 .Person:nth-child(6) > h3 { color: var(--m6); }
 .Person:nth-child(7) > h3 { color: var(--m7); }
 .Person:nth-child(8) > h3 { color: var(--m8); }
+.Person:nth-child(9) > h3 { color: var(--m9); }
+.Person:nth-child(10) > h3 { color: var(--m10); }
+.Person:nth-child(11) > h3 { color: var(--m11); }
+.Person:nth-child(12) > h3 { color: var(--m12); }
 
 /********************* Popup *********************/
 main.blurred {
@@ -164,6 +168,9 @@ main.blurred {
 .Popup .name.m7 { color: var(--m7); }
 .Popup .name.m8 { color: var(--m8); }
 .Popup .name.m9 { color: var(--m9); }
+.Popup .name.m10 { color: var(--m10); }
+.Popup .name.m11 { color: var(--m11); }
+.Popup .name.m12 { color: var(--m12); }
 
 .Popup .msg {
     overflow-y: scroll;
