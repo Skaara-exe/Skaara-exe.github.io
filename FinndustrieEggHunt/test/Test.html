@@ -6,19 +6,39 @@
         <link rel="stylesheet" href="Test.css">
         <title>EggHunt</title>
     </head>
-
-    <body>
-        <main>
+    
+    <body onload="bodyLoaded()">
+        <main class="">
             <!-- dives like this will be pins all spread out over the board -->
-            <div class="Person" id="Lecloutpanda">
+            <div class="Person" id="Lecloutpanda" onclick="openMsg('1')">
                 <div class="Pin"> </div>
                 <h3 id="Lecloutpanda">Lecloutpanda</h3>
                 <p>I know I break the game and mod the hell out of it and cheat but hey it was all in good fun</p>
+                <p hidden>I know I break the game and mod the hell out of it and cheat but hey it was all in good fun</p>
             </div>
-            <!-- i dont know how to make the MAIN tag fill the whole screen hence the BR's
-            but i also dont know how many are going to fit so it might be better to make it just fit all the content... -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        
+            <div class="Person" id="Skaara-exe" onclick="openMsg('2')">
+                <div class="Pin"> </div>
+                <h3 id="Skaara-exe">Skaara-exe</h3>
+                <p>I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. </p>
+                <p hidden>I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. </p>
+            </div>
+            <div class="Person" id="Skaara-exe" onclick="openMsg('3')">
+                <div class="Pin"> </div>
+                <h3 id="Skaara-exe">Skaara-exe</h3>
+                <p>I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. </p>
+                <p hidden>I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. I know I break the game and mod the hell out of it and cheat but hey it was all in good fun. </p>
+            </div>
         </main>
+
+        <div class="Popup hidden" id="popup">
+            <img src="assets/back.svg" class="back" onclick="goBack()">
+            <div class="Pin"> </div>
+            <div class="img">
+                <img src="" alt="pfp">
+            </div>
+            <div class="name"></div>
+            <div class="msg"></div>
+        </div>
     </body>
-</html>
+    <script src="Test.js"></script>
+    </html>
