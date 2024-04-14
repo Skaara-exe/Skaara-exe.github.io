@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'RoundsBlack_v2';
-    src: url('RoundsBlack_v2.otf') format('opentype');
+    font-family: 'RoundsBlack';
+    src: url('RoundsBlack.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,7 +34,7 @@
     border-radius: 100px;
 }
 body{
-    font-family:'RoundsBlack_v2';
+    font-family:'RoundsBlack';
     background-color: var(--primary);
     height:fit-content;
 }

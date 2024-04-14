@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'RoundsBlack_v2';
+    font-family: 'RoundsBlack';
     font-style: normal;
     font-weight: normal;
-    src: local('Tangerine'), url('RoundsBlack_v2.otf') format('truetype');
+    src: local('Tangerine'), url('RoundsBlack.otf') format('truetype');
   }
 :root{
     --primary:#fafafa;
@@ -10,7 +10,7 @@
     --dod:#db3030;
 }
 body{
-    font-family: 'RoundsBlack_v2';
+    font-family: 'RoundsBlack';
     background-color: var(--primary);
 
 }
