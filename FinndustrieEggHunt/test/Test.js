@@ -45,7 +45,7 @@ function openMsg(idx) {
 function goBack() {
     document.getElementsByTagName("main")[0].classList.remove("blurred");
     document.getElementById("popup").classList.add("hidden");
-    for (let i = 1; i < maxItems; i++) {
+    for (let i = 1; i < (maxItems+1); i++) {
         try { document.getElementById("popup").querySelector(".name").classList.remove(`m${i}`); }
         catch (e) {}
     }
