@@ -1,0 +1,32 @@
+main{
+    --primary:#fafafa;
+    --secondary:#F7D002;
+    --dod:#db3030;
+}
+body{
+    background-color: var(--primary);
+
+}
+main {
+    background: var(--secondary);
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    padding-right: 0px;
+    margin: 20px;
+
+
+    border: 20px solid var(--dod) ;
+    border-image: repeating-linear-gradient(
+            -45deg,
+            #fafafa,
+            #fafafa 20px,
+            #F7D002 20px,
+            #F7D002 40px
+    ) 20;
+}
+h1{
+    color: #fafafa;
+    text-align:center;
+    font-size: 5em;
+}
