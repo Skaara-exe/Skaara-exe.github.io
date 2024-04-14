@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'RoundsBlack_v2';
+    src: url('RoundsBlack_v2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --primary:#424B54;
+    --secondary:#B39063 ;
+    --tertiary:#C7A477;
+    --quartiary:#D8C9B2 ;
+    --pin:#DA663C  ;
+
+}
+body{
+    font-family:'RoundsBlack_v2';
+    background-color: var(--primary);
+    height:fit-content;
+}
+main {
+    border-radius: 3em;
+    background: var(--tertiary);    
+    width: auto;
+    height:fit-content;
+    padding: 20px;
+    padding-right: 0px;
+    margin: 20px;
+    box-shadow: inset -0.5em -0.5em  var(--secondary);
+}
+div{
+    background-color: var(--quartiary);
+    border-radius: 1.5em;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-top: 0%;
+    
+}
+div.Pin{
+    background-color:var(--pin);
+    border-radius: 100%;
+    width: 3em;
+    height: 3em;
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    top: -15px;
+    left: calc(50% - 3em);
+}
+div.Person{
+    width: 300px;
+    rotate: -15deg;
+}
+
+h3#Lecloutpanda{
+    color: #0fc427;
+}
