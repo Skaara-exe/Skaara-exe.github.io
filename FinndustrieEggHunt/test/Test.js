@@ -1,5 +1,19 @@
 var maxItems = 0;
 var imgExt = ".png";
+var images = [
+    "FinnLove"
+]
+
+/*
+    I've implemented amoji support, to use it, just add it's
+    name in the "images" list above, and it's image with the
+    same name in the "emojis" folder in the "assets" folder
+    in .png.
+    On the user side (the person sending you their message),
+    they should just use the name in the list above.
+    And javascript will do the rest.
+    WARNING: it's case sentitive.
+*/
 
 
 function truncate(str, n, useWordBoundary=true) {
@@ -22,6 +36,25 @@ function bodyLoaded() {
     }
 }
 
+function loadImages(str) {
+    for (let i = 0; i < images.length; i++) {
+        try { str = str.replaceAll(images[i], `<img class="emoji" src="assets/emojis/${images[i]}.png">`) }
+        catch (e) {}
+    }
+    return str
+}
+
+function loadColors(str) {
+    let colors = str.match(/#([0-9A-F]){6}/gi);
+    let scp = str;
+    for (let i = 0; i < colors.length; i++) {
+        let regex = new RegExp(`(<color=)${colors[i]}>`, "gi");
+        scp = scp.replace(regex, `<span style="color:${colors[i]}">`);
+    }
+    scp = scp.replaceAll("</color>", "</span>");
+    return scp
+}
+
 function openMsg(idx) {
     const elem = document.querySelector(`.Person:nth-child(${idx})`);
     const author = elem.querySelector("h3");
@@ -35,7 +68,7 @@ function openMsg(idx) {
     try { p_img.src = "assets/" + author.innerHTML + imgExt; }
     catch (e) {}
     p_author.innerHTML = author.innerHTML;
-    p_msg.innerHTML = msg.innerHTML;
+    p_msg.innerHTML = loadColors(loadImages(msg.innerHTML));
     p_author.classList.add(`m${idx}`);
 
     document.getElementsByTagName("main")[0].classList.add("blurred");
