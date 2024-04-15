@@ -47,11 +47,13 @@ function loadImages(str) {
 function loadColors(str) {
     let colors = str.match(/#([0-9A-F]){6}/gi);
     let scp = str;
-    for (let i = 0; i < colors.length; i++) {
-        let regex = new RegExp(`(<color=)${colors[i]}>`, "gi");
-        scp = scp.replace(regex, `<span style="color:${colors[i]}">`);
-    }
-    scp = scp.replaceAll("</color>", "</span>");
+    try {
+        for (let i = 0; i < colors.length; i++) {
+            let regex = new RegExp(`(<color=)${colors[i]}>`, "gi");
+            scp = scp.replace(regex, `<span style="color:${colors[i]}">`);
+        }
+        scp = scp.replaceAll("</color>", "</span>");
+    } catch (e) {}
     return scp
 }
 
