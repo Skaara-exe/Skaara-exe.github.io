@@ -1,5 +1,6 @@
 var maxItems = 0;
-var imgExt = ".png";
+var imgExt1 = ".png";
+var imgExt2 = ".gif";
 var images = [
     "FinnLove"
 ]
@@ -63,11 +64,14 @@ function openMsg(idx) {
     const msg = elem.querySelector("p[hidden]");
 
     const popup = document.getElementById("popup");
-    const p_img = popup.querySelector(".img img");
+    const p_img1 = popup.querySelector(".img img#pfp1");
+    const p_img2 = popup.querySelector(".img img#pfp2");
     const p_author = popup.querySelector(".name");
     const p_msg = popup.querySelector(".msg");
 
-    try { p_img.src = "assets/" + author.innerHTML + imgExt; }
+    try { p_img1.src = "assets/" + author.innerHTML + imgExt1; }
+    catch (e) {}
+    try { p_img2.src = "assets/" + author.innerHTML + imgExt2; }
     catch (e) {}
     p_author.innerHTML = author.innerHTML;
     p_msg.innerHTML = loadColors(loadImages(msg.innerHTML));
