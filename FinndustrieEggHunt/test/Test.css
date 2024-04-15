@@ -6,11 +6,12 @@
 }
 :root{
     --primary:#424B54;
-    --secondary:#B39063 ;
+    --secondary:#B39063;
     --tertiary:#C7A477;
-    --quartiary:#D8C9B2 ;
+    --quartiary:#D8C9B2;
     --pin:#F17167;
     --pinSec: #DA663C;
+    --font: #695A3B;
 
     --m1: #ff85f5;
     --m2: #ab94ee;
@@ -39,7 +40,14 @@ body{
     background-color: var(--primary);
     height:fit-content;
 }
+header{
+    padding: 0px 20px 0px 20px;
+    margin: 20px;
+    margin-bottom: 0%;
+    font-size: 20px;
+}
 main {
+    color: var(--font);
     border-radius: 3em;
     background: var(--tertiary);    
     width: auto;

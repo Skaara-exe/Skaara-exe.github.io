@@ -2,7 +2,7 @@ var maxItems = 0;
 var imgExt1 = ".png";
 var imgExt2 = ".gif";
 var images = [
-    "FinnLove"
+    "FinnLove","FinnLLove","FinnArson","FinnKEK","FinnPog"
 ]
 
 /*
