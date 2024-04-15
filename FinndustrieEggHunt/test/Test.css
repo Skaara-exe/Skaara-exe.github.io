@@ -9,20 +9,21 @@
     --secondary:#B39063 ;
     --tertiary:#C7A477;
     --quartiary:#D8C9B2 ;
-    --pin:#DA663C  ;
+    --pin:#F17167;
+    --pinSec: #DA663C;
 
-    --m1: #0fc427;
-    --m2: #830c73;
-    --m3: #e20d0d;
-    --m4: #000000;
-    --m5: #000000;
-    --m6: #000000;
-    --m7: #000000;
-    --m8: #000000;
-    --m9: #000000;
-    --m10: #000000;
-    --m11: #000000;
-    --m12: #000000;
+    --m1: #ff85f5;
+    --m2: #ab94ee;
+    --m3: #e72f0f;
+    --m4: #00ff22;
+    --m5: #4caf50;
+    --m6: #808000;
+    --m7: #a994eb;
+    --m8: #1b61e4;
+    --m9: #999999;
+    --m10: #ff1ad5;
+    --m11: #800080;
+    --m12: #0749ff;
     --m13: #000000;
 }
 ::-webkit-scrollbar {
@@ -63,15 +64,16 @@ div *:not(img):not(.Pin) {
 }
 
 div:not(div[hidden]).Pin{
-    background-color:var(--pin);
+    background-color:var(--pinSec);
     border-radius: 100%;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     padding: 0%;
     margin: 0%;
     position: relative;
     top: -15px;
     left: calc(50% - 3em);
+    box-shadow: 0px 0px 0px 0.5em var(--pin);
 }
 div:not(div[hidden]).Person {
     width: 300px;
@@ -87,6 +89,15 @@ div:not(div[hidden]).Person:hover {
 .Person:nth-child(1) > h3 { color: var(--m1); }
 .Person:nth-child(2) > h3 { color: var(--m2); }
 .Person:nth-child(3) > h3 { color: var(--m3); }
+.Person:nth-child(4) > h3 { color: var(--m4); }
+.Person:nth-child(5) > h3 { color: var(--m5); }
+.Person:nth-child(6) > h3 { color: var(--m6); }
+.Person:nth-child(7) > h3 { color: var(--m7); }
+.Person:nth-child(8) > h3 { color: var(--m8); }
+.Person:nth-child(9) > h3 { color: var(--m9); }
+.Person:nth-child(10) > h3 { color: var(--m10); }
+.Person:nth-child(11) > h3 { color: var(--m11); }
+.Person:nth-child(12) > h3 { color: var(--m12); }
 
 /********************* Popup *********************/
 main.blurred {
@@ -157,6 +168,9 @@ main.blurred {
 .Popup .name.m7 { color: var(--m7); }
 .Popup .name.m8 { color: var(--m8); }
 .Popup .name.m9 { color: var(--m9); }
+.Popup .name.m10 { color: var(--m10); }
+.Popup .name.m11 { color: var(--m11); }
+.Popup .name.m12 { color: var(--m12); }
 
 .Popup .msg {
     overflow-y: scroll;

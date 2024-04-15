@@ -1,5 +1,5 @@
 var maxItems = 0;
-var imgExt = ".webp";
+var imgExt = ".png";
 
 
 function truncate(str, n, useWordBoundary=true) {

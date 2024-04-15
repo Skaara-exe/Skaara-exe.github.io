@@ -1,5 +1,21 @@
 Me and my lawyer congratulate you on the release of Tank Team (and we will see you in court) -  from Glowypmkin and Angy_peachy
-I know I break the game and mod the hell out of it and cheat but hey it was all in good fun - Lecloutpanda
+I know I come into the community one day then made some things, modded some stuff and hacked your games but hey we had some good laughs here and there, we came together as a community inspiring each other to strive for things may it be to learn 3D modeling, coding or just general stuff and in my eyes that's pretty good. - Lecloutpanda
 Thank you and Well Done, Mr Dusty - DoctorLeaf
 Thank you so much Finn for growing such an amazing community, I’ve never felt so involved in anything like this before and I’m so so grateful to be welcomed and be a part of it. The stuff you create is far from just amazing and I’m so happy to see the stuff you’re creating is getting the recognition it deserves. Never stop doin’ what you’re doin’ - Twig
 This game is really fun to play with friends, but the developers got a weird greasy moustache -BlipDip
+As much as I terrorize you with a humanoid bean person, and a specific movie poster, I am still excited to see how far you will go with this, best of luck! - Tacos
+Hey Finn, thank you for everything you've done over the past year. Also a massive well done on releasing Tank Team on steam. Congrats - DoctorLeaf
+you've done an amazing job on the tank team! it's always been so much fun playing and testing it out, I'm excited to see what's waiting for you next! :> Your friend, Toi - Toi
+your creativity and originality with your passion and dedication are all amazing traits of yours that led you to create and grow a community like us, we all love and are proud of you and i strive to be like you in those regards <3 - Thonk
+Your streams have been very fun to watch and interact with and im happy to be a part of such an amazing community. Keep doing what your doing and i'm very happy about your recent success with Tank team you deserve all of it. Finndu1Love - Tantawelle
+I'm very happy I can be a part of this beautiful community. And that's all thanks to you Finn I will support your game even if it doesn't become popular. I hope that we as a community will create a great game that will be talked about all over the world. - Furciszekku
+It's truly amazing how much you've grown with tank team and everything else, keep doing what you're doing! Great job!!! - Barkinspiders
+Finn, thank you for giving me a chance to be a part of all this, your streams helped me through not-so-easy times and I will be forever grateful. - Hayoo_e
+
+
+<div class="Person" id="NAME" onclick="openMsg('12')">
+                <div class="Pin"> </div>
+                <h3 id="NAME">NAME</h3>
+                <p>Lorem ipsum </p>
+                <p hidden>Lorem ipsum </p>
+            </div>
