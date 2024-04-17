@@ -29,6 +29,9 @@
     --m14: #FFA500;
     --m15: #49965b;
     --m16: #45bdb7;
+    --m16: #e49f1e;
+    --m17: #A020F0;
+    --m18: #4fd5df;
 }
 ::-webkit-scrollbar {
     background-color: var(--quartiary);
@@ -113,6 +116,8 @@ div:not(div[hidden]).Person:hover {
 .Person:nth-child(14) > h3 { color: var(--m14); }
 .Person:nth-child(15) > h3 { color: var(--m15); }
 .Person:nth-child(16) > h3 { color: var(--m16); }
+.Person:nth-child(17) > h3 { color: var(--m17); }
+.Person:nth-child(18) > h3 { color: var(--m18); }
 
 /********************* Popup *********************/
 main.blurred {
@@ -190,6 +195,8 @@ main.blurred {
 .Popup .name.m14 { color: var(--m14); }
 .Popup .name.m15 { color: var(--m15); }
 .Popup .name.m16 { color: var(--m16); }
+.Popup .name.m17 { color: var(--m17); }
+.Popup .name.m18 { color: var(--m18); }
 
 .Popup .msg {
     overflow-y: scroll;
