@@ -4,4 +4,4 @@ for everyone who already wrote a text i'm sorry, BUT a little bit has changed so
 -- emoji's are now suported (finn's emoji's) by typing FinnLove, FinnLLove, FinnArson, FinnKEK, FinnPog, ...
 
 you still have a bunch of time if you want to make changes, let me know
-and for those who want a current preview of the page so far [Test](https://skaara-exe.github.io/FinndustrieEggHunt/test/Test.html)
+and for those who want a current preview of the page so far [Test](https://skaara-exe.github.io/FinndustrieEggHunt/)
