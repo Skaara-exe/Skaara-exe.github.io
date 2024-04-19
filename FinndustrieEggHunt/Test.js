@@ -79,12 +79,16 @@ function openMsg(idx) {
 
     document.getElementsByTagName("main")[0].classList.add("blurred");
     document.getElementsByTagName("iframe")[0].classList.add("blurred");
+    document.getElementsByTagName("header")[0].classList.add("blurred");
+    document.getElementsByTagName("footer")[0].classList.add("blurred");
     popup.classList.remove("hidden");
 }
 
 function goBack() {
     document.getElementsByTagName("main")[0].classList.remove("blurred");
     document.getElementsByTagName("iframe")[0].classList.remove("blurred");
+    document.getElementsByTagName("header")[0].classList.remove("blurred");
+    document.getElementsByTagName("footer")[0].classList.remove("blurred");
     document.getElementById("popup").classList.add("hidden");
     for (let i = 1; i < (maxItems+1); i++) {
         try { document.getElementById("popup").querySelector(".name").classList.remove(`m${i}`); }

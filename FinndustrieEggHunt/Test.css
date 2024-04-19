@@ -133,10 +133,7 @@ div:not(div[hidden]).Person:hover {
 
 
 /********************* Popup *********************/
-main.blurred {
-    filter: brightness(.5) blur(5px);
-}
-iframe.blurred{
+.blurred{
     filter: brightness(.5) blur(5px);
 }
 
